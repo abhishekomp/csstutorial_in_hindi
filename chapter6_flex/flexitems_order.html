@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Items Order property</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;    /*for horizontal alignment of items*/
+            background-color: aquamarine;
+            height: 100vh;
+            /* align-items: center; */
+            align-content: center;
+
+        }
+        .box1{
+            height: 234px;
+            width: 345px;
+            background-color: blue;
+            color: white;
+            border: 2px solid black;
+            order: 2;
+        }
+        .box2{
+            height: 234px;
+            width: 345px;
+            background-color: red;
+            color: white;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2a</div>
+        <div class="box2">Box 2b</div>
+        <div class="box2">Box 2c</div>
+    </div>
+</body>
+</html>

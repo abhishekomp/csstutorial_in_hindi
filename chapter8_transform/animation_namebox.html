@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Dragon</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            font-size:xx-large;
+            background-color: red;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* animation-name: widthAnimate;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 3;
+            animation-direction: alternate-reverse; */
+            animation: widthAnimate 3s ease-in-out 0.5s 4 alternate;
+        }
+        /* img{
+            animation: widthAnimate 1s ease-in-out 0.5s infinite alternate;
+        } */
+        @keyframes widthAnimate{
+            from{
+                width: 200px;
+                height: 200px;
+            }
+            to {
+                width: 400px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="toon3.jpg" alt="toon" width="200px" height="200px">
+        <div class="box">Abhikriti</div>
+        <img src="Unicorn.png" alt="dragon" width="200px" height="200px">
+    </div>
+</body>
+</html>

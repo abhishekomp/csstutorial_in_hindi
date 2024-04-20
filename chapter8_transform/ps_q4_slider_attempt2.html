@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider with 2 images</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+        height: 122px;
+        background-color: black;
+       }
+
+       @keyframes slider1{
+            0%{
+                transform: translate(24vw);
+            }
+            100% {
+                transform: translate(98vw);
+            }
+        }
+
+        @keyframes slider2{
+            0%{
+                transform: translate(-98vw);
+            }
+            100% {
+                transform: translate(-25vw);
+            }
+        }
+
+       main{
+        height: 899px;
+        background-color: blue;
+       }
+       .img1 {
+        /* display:block; */
+        /* margin:auto; */
+        transform: translate(24vw); /*98*/
+        animation: slider1 1s 2s forwards;
+       }
+       .img2 {
+        transform: translate(-98vw);/*-25*/
+        animation: slider2 1s 2s forwards;
+       }
+       .slider{
+        background-color: aqua;
+        height: 523px;
+        /* width: 100vw; */
+        /* overflow: hidden; */
+        /* margin: auto; */
+        display: flex;
+        justify-content: center;
+       }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="slider">
+            <img class="img1" src="https://source.unsplash.com/collection/190727/1600x900" alt="NatureImage">
+            <img class="img2" src="https://source.unsplash.com/collection/190727/1600x901" alt="NatureImage">
+        </div>
+    </main>
+</body>
+</html>

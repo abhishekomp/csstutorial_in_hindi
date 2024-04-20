@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Percentage</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+        }
+        .box{
+            width: 100px;
+            height: 40px;
+            background-color: red;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* animation-name: widthAnimate;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 3;
+            animation-direction: alternate-reverse; */
+            animation: widthAnimatePercentage 3s ease-in-out 0.5s 4 alternate;
+        }
+        img{
+            animation: widthAnimate .1s ease-in-out 0.5s infinite alternate;
+        }
+        @keyframes widthAnimate{
+            from{
+                width: 100px;
+                height: 40px;
+            }
+            to {
+                width: 200px;
+                height: 80px;
+            }
+        }
+        @keyframes widthAnimatePercentage{
+            0% {
+                width: 120px;
+                height: 120px;
+            }
+            20% {
+                width: 144px;
+                height: 144px;
+            }
+            100% {
+                width: 240px;
+                height: 240px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="box">This is me</div> -->
+        <img src="dragon.png" alt="dragon" width="120px">
+    </div>
+</body>
+</html>

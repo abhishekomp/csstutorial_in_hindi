@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Q4</title>
+    <style>
+        .progress{
+            background-color: red;
+            height: 3px;
+            animation: loadprogressbar 2s ease-in-out; 
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       header{
+        height: 122px;
+        background-color: black;
+       }
+       main{
+        height: 899px;
+        background-color: blue;
+       } 
+       @keyframes loadprogressbar {
+        0%{
+            width: 0;
+        }
+        50%{
+            width: 70vw;
+        }
+        100%{
+            width: 100vw;
+        }
+       }
+       
+       @keyframes rotateanimation {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+       }
+       img{
+        display: block;    
+        margin: auto;
+
+        /* animation: rotateanimation 1s ease-in-out infinite;  */
+       }
+       .slider{
+        background-color: white;
+        height: 523px;
+        /* width: 100vw; */
+        overflow: hidden;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+       }
+       /* .img1{
+        transform: translate(0vw);
+       }
+       .img2{
+        transform: translate(100vw);
+       } */
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <main>
+        <!-- <img src="dragon.png" alt="dragon" width="122px"> -->
+        <div class="slider">
+            <img class="img1" src="https://source.unsplash.com/collection/190727/1600x900" alt="NatureImage">
+            <!-- <img class="img2" src="https://source.unsplash.com/collection/190727/1600x901" alt="NatureImage"> -->
+        </div>
+    </main>
+</body>
+</html>

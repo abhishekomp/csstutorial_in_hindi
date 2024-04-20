@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS Q4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+        }
+
+        ul {
+            padding: 34px;
+        }
+
+        li {
+            list-style: none;
+            display: inline;
+            padding: 43px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            /* justify-content: flex-start; */
+        }
+
+        img {
+            height: 70%;
+            max-width: 23%;
+            /* border: 2pc solid red; */
+            box-sizing: border-box;
+        }
+        .backgroundImage {
+            height: 140px;
+            background-image: url('AkshayKumar.jpg');
+            background-repeat: space;
+        }
+        .threeimagescontainer img{
+            border: 1px solid black;
+        }
+        .threeimagescontainer {
+            border: 1px solid black;
+            height: 60vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <div class="userimage">
+            <img src="loginImage.jpg" alt="login">
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="backgroundImage">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa consequuntur quo vero ipsam animi ad sed delectus saepe et laudantium velit voluptatum maiores doloremque rerum iste cupiditate consectetur voluptas cumque sapiente, distinctio rem eos!
+    </div>
+    <div class="threeimagescontainer">
+        <img src="toon3.jpg" alt="toon">
+        <img src="toon3.jpg" alt="toon">
+        <img src="toon3.jpg" alt="toon">
+    </div>
+</body>
+
+</html>

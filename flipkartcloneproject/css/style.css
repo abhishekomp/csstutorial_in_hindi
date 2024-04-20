@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root {
+    --main-bg-color: #2a2ca5;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: red solid 1px; */
+}
+/* html{
+    width: 100%;
+} */
+header {
+    /* height: 58px; */
+    /* background-color: black; */
+    width: 100%;
+    background-color: var(--main-bg-color);
+    /* border: 2px solid red; */
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo img {
+    width: 88px;
+    padding: 25px;
+}
+nav ul {
+    height: 58px;
+    /* height: 12vh; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    /* color: rgb(190, 214, 230); */
+    font-weight: bolder;
+}
+
+.searchbar input{
+    width: 510px;
+    /* width: 75%; */
+    height: 32px;
+    border-radius: 4px;
+    margin: 0 10px 0 56px;
+    padding: 0 12px;
+}
+
+.searchbar button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.searchbar button:hover{
+    /* font-family: 'Poppins', sans-serif; */
+    font-weight:bolder;
+}
+main{
+    width: 100%;
+}
+
+.slider{
+    /* width: 84%; */
+    margin: 12px auto;  
+}
+
+.slider img{
+    width: 80%;
+    display: block;
+    margin: auto;
+    /* width: 80%; */
+    /* margin: 12px auto; */
+}
+
+.card{
+    background-color: rgba(163, 213, 204, 0.694);
+    max-width: 88%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    /* border-radius: 2%; */
+}
+
+/* .card h2{
+    font-family: 'Poppins', sans-serif;
+} */
+
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 1%;
+    /* width: 12%; */
+}
+
+/* .card .card-item {
+    width: 12%;
+} */
+
+.container{
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+footer {
+    height: 14%;
+    width: 100%;
+    /* background-color: black; */
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
