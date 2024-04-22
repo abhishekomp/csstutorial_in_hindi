@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Create a web page with a navigation bar with blue background color and white items in it.
+Additional: 
+a) Add a small image just before the items in the nav bar.
+b) Make the background color of your main container red.
+E:\html\csstutorial_in_hindi\chapter2\chp2_ps_q1.html
+c) Put a green color border in the main container.
+d) Write some text in the main container and align the text in the middle of the main container.
+To do: Position the text in the main container in the middle of the main container. Try paragraph inside the main container. -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PS Q3 Redo</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .nav_bar{
+      background-color: blue;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.6vw 0.5vw;
+      height: 2.5vw;
+    }
+    .nav_bar ul{
+      display: flex;
+      margin: 0.5vw;
+      /* align-items: center; */
+    }
+    li{
+      list-style: none;
+      margin: 0.6vw;
+      /* display: inline; */
+      /* padding: 0 0.2vw; */
+    }
+    .nav_bar img{
+      /* position: relative; */
+      /* top: 6px; */
+      /* left: 5px; */
+      border-radius: 80%;
+    }
+    .flex_container{
+      display: flex;
+      justify-content: space-between;
+    }
+    .leftbox{
+      height: 20vh;
+      width: 30vw;
+      background-color: aqua;
+    }
+    .rightbox{
+      height: 20vh;
+      width: 30vw;
+      background-color: red;
+    }
+    .company_image{
+      width: 100%;
+      height: 10vh;
+      /* background: url(https://picsum.photos/1920/1080) center/cover no-repeat; */
+      background: url('img/html-css-banner.png') center/cover no-repeat;
+      /* background-image: url('img/html-css-banner.png');
+      background-repeat: no-repeat;
+      background-size: cover; */
+      /* border: 1px solid red; */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav_bar">
+      <img src="img/donald_duck_small.JPG" width="25vw" alt="Donald Duck">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="company_image">
+      <!-- <img src="img/html-css-banner.png" alt="Banner"> -->
+    </div>
+    <div class="flex_container">
+      <div class="leftbox">Left box</div>
+      <div class="rightbox">Right box</div>
+    </div>
+  </main>
+</body>
+</html>
