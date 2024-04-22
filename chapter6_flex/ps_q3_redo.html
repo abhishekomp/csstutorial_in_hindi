@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PS Q3 Redo</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .nav_bar{
+      background-color: blue;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0.6vw 0.5vw;
+      height: 2.5vw;
+    }
+    .nav_bar ul{
+      display: flex;
+      margin: 0.5vw;
+      /* align-items: center; */
+    }
+    li{
+      list-style: none;
+      margin: 0.6vw;
+      /* display: inline; */
+      /* padding: 0 0.2vw; */
+    }
+    img{
+      /* position: relative; */
+      /* top: 6px; */
+      /* left: 5px; */
+      border-radius: 80%;
+    }
+    .flex_container{
+      display: flex;
+      justify-content: space-between;
+    }
+    .leftbox{
+      height: 20vh;
+      width: 30vw;
+      background-color: aqua;
+    }
+    .rightbox{
+      height: 20vh;
+      width: 30vw;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav_bar">
+      <img src="img/donald_duck_small.JPG" width="25vw" alt="Donald Duck">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="flex_container">
+      <div class="leftbox">Left box</div>
+      <div class="rightbox">Right box</div>
+    </div>
+  </main>
+</body>
+</html>
