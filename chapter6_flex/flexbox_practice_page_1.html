@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Flexbox practice page 1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        background: #a1c3ff;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px 30px;
+      }
+      .header .container h1 {
+        margin-top: 1em;
+        text-align: center;
+        font-size: 4em;
+      }
+      .boxes .container {
+        min-height: 80vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .boxes .container .box{
+        background-color: aquamarine;
+        max-width: 30%;
+        padding: 1em 1em;
+      }
+      .box h2{
+        margin-bottom: 0.8em;
+      }
+      .box .readMore{
+        max-width: 40%;
+        margin-top: 0.6em;
+        background-color: tomato;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-transform: uppercase;
+      }
+      .box .readMore:hover{
+        color:aqua;
+      }
+
+      @media(max-width: 768px){
+        .boxes .container{
+          display: block;
+          text-align: center;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <section class="header">
+      <div class="container">
+        <h1>This is heading</h1>
+      </div>
+    </section>
+    <section class="boxes">
+      <div class="container">
+        <div class="box">
+          <h2>01</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            laudantium architecto ut distinctio, laborum dolorem sequi iusto
+            odit cupiditate quas.
+          </p>
+          <div class="readMore">Read More</div>
+        </div>
+        <div class="box">
+          <h2>02</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            laudantium architecto ut distinctio, laborum dolorem sequi iusto
+            odit cupiditate quas.
+          </p>
+          <div class="readMore">Read More</div>
+        </div>
+        <div class="box">
+          <h2>03</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            laudantium architecto ut distinctio, laborum dolorem sequi iusto
+            odit cupiditate quas.
+          </p>
+          <div class="readMore">Read More</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
