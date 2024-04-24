@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Margin Effect on children</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        background: #a1c3ff;
+        height: 100vh;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        border: 1px solid blu;
+        /* padding: 0 30px; */
+      }
+      .container .box{
+        border: 1px solid red;
+        background: rgb(0, 255, 195);
+        /* margin: 6px; */
+      }
+      /* .fullbody {
+        height: 100%;
+      }
+      .fullbody .container {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .container .h1 {
+        padding-top: 4em;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <h1>This is heading</h1> -->
+      <div class="box">
+        <h2>01</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          laudantium architecto ut distinctio, laborum dolorem sequi iusto odit
+          cupiditate quas.
+        </p>
+        <div class="readMore">Read More</div>
+      </div>
+      <div class="box">
+        <h2>02</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          laudantium architecto ut distinctio, laborum dolorem sequi iusto odit
+          cupiditate quas.
+        </p>
+        <div class="readMore">Read More</div>
+      </div>
+      <div class="box">
+        <h2>03</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          laudantium architecto ut distinctio, laborum dolorem sequi iusto odit
+          cupiditate quas.
+        </p>
+        <div class="readMore">Read More</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Height Percentage Demo</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        /* 1920×1080 (Full HD) */
+        max-height: 1080px;
+        font-family: 'Balsamiq Sans', 'Courier New', Courier, monospace;
+        background: #a1c3ff;
+      }
+      .navbar {
+        height: 6%;
+        background: #3474e6;
+        color: #fff;
+      }
+      .logo {
+        height: 61%;
+        background: #0151cc;
+      }
+      .main {
+        height: 30%;
+      }
+      .footer {
+        height: 3%;
+        background-color: blueviolet;
+      }
+      .container {
+        width:80%;
+        max-width: 1536px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">This is header</div>
+    </header>
+    <main class="logo">
+      <div class="container">This is logo</div>
+    </main>
+    <main class="main">
+      <div class="container">This is main</div>
+    </main>
+    <footer class="footer">
+      <div class="container">This is footer</div>
+    </footer>
+  </body>
+</html>
