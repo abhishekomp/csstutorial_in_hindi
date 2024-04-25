@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        /* 1920×1080 (Full HD) */
+        max-height: 1080px;
+        font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+        background: #a1c3ff;
+      }
+      .navbar {
+        height: 6%;
+        background: #3474e6;
+        color: #fff;
+      }
+      .main{
+        height: 94%;
+      }
+      .container {
+        width:80%;
+        height: 100%;
+        max-width: 1536px;
+        margin: 0 auto;
+      }
+      .navbar .container nav{
+        height: 100%;
+      }
+      .navbar .container nav .flex_container{
+        height: 100%;
+        display: flex;
+      }
+      .flex_container li{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1em;
+      }
+      .main .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .box{
+        height: 30%;
+        background-color:rgb(42, 165, 75);
+        margin: 0 2em;
+        border-radius: 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+      }
+      /* .box:nth-last-of-type(1){
+        margin-left: 0;
+      } */
+        
+    </style>
+    <title>Flexbox items size</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <nav>
+          <ul class="flex_container">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolorum!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolorum!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolorum!</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, dolorum!</div>
+      </div>
+    </main>
+  </body>
+</html>

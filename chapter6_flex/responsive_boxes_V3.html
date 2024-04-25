@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Responsive Cards V3</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        font-family: "Poppins", "Courier New", Courier, monospace;
+        color: #333;
+        background: #1ab25c;
+        height: 100%;
+      }
+      .main{
+        height: 96%;
+        display: flex;
+        background-color: burlywood;
+      }
+      .footer{
+        height: 4%;
+      }
+      .container{
+        width: 80%;
+        max-width: 1536px;
+        margin: 0 auto;
+      }
+      .main .container{
+        /* border: 0.1px solid black; */
+        height: 50%;
+        margin: 7em auto;
+        background-color:aqua;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .main .container .item{
+        flex-basis: 25%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        height: 200px;
+        background-color: slateblue;
+        border: 0.2px solid red;
+        margin: 0 2em;
+        padding: 1.2em 1.2em;
+        border-radius: 20%;;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="item">Core Java</div>
+        <div class="item">Java Collections</div>
+        <div class="item">Lambda</div>
+        <div class="item">Spring Framework</div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright &copy 2024 Edusight AB. All rights reserved</p>
+      </div>
+    </footer>
+      <!-- <div class="flex_container">
+      <div class="item">
+        <p class="topic">Core Java</p>
+        <ul>
+          <li>Java Generics</li>
+          <li>Java Generics - Advanced</li>
+        </ul>
+      </div>
+      <div class="item">
+        <p class="topic">Java Collections</p>
+        <ul>
+          <li>Collection Interfaces</li>
+          <li>Collection Sorting</li>
+        </ul>
+      </div>
+      <div class="item">
+        <p class="topic">Lambda</p>
+        <ul>
+          <li>Functional Interfaces</li>
+          <li>Creating Consumer, Predicate and Function</li>
+        </ul>
+      </div>
+      <div class="item">
+        <p class="topic">Spring Framework</p>
+        <ul>
+          <li>Dependency Injection</li>
+          <li>Bean Lifecycle</li>
+        </ul>
+      </div>
+    </div> -->
+
+      
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Responsive Boxes V2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        font-family: "Poppins", "Courier New", Courier, monospace;
+        font-size: 16px;
+        color: #333;
+        background: #1ab25c;
+        /* box-sizing: border-box;
+        height: 100vh; */
+      }
+      .flex_container {
+        background-color: #0d6eab;
+        /* width: 600px; */
+        width: 84vw;
+        /* flex-basis: 84vw; */
+        /* height: 200px; */
+        height: 50vh;
+        /* max-height: 400px; */
+        display: flex;
+        margin: 8em auto;
+        border-radius: 1em;
+      }
+      .item {
+        background-color: skyblue;
+        /* width: 25%; */
+        /* width: 150px; */
+        /* max-width: 120px; */
+        /* min-width: 150px; */
+        /* max-width: 10%; */
+        margin: 1.2em 1.2em;
+        flex-basis: 25%;
+        flex-grow: 1;
+        border: 0.8px solid #000;
+        /* font-size: 1.5rem; */
+        /* flex-grow: 1; */
+      }
+      .flex_container .item .topic{
+        font-size: x-large;
+        padding-left: 0.4em;
+        font-weight: bold;
+       }
+       .flex_container .item ul{
+        margin-top: 1em;
+       }
+       .flex_container .item ul li{
+        /* list-style-type: circle; */
+        list-style-position: inside;
+        margin-left: 1em;
+        margin-bottom: 1em;
+       }
+       .footer {
+        background-color: #1b16b3;
+        color: #fff;
+      }
+       .footer .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width: 768px) {
+        .flex_container {
+          flex-direction: column;
+          border-radius: 0.5em;
+          height: 80vh;
+        }
+        .flex_container .item {
+          margin: 0.4em 0.5em;
+        }
+      }
+      /* .item:nth-of-type(1){
+
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <div class="flex_container">
+      <div class="item">
+        <p class="topic">Core Java</p>
+        <ul>
+          <li>Java Generics</li>
+          <li>Java Generics - Advanced</li>
+        </ul>
+      </div>
+      <div class="item">
+        <p class="topic">Java Collections</p>
+        <ul>
+          <li>Collection Interfaces</li>
+          <li>Collection Sorting</li>
+        </ul>
+      </div>
+      <div class="item">
+        <p class="topic">Lambda</p>
+        <ul>
+          <li>Functional Interfaces</li>
+          <li>Creating Consumer, Predicate and Function</li>
+        </ul>
+      </div>
+      <div class="item">
+        <p class="topic">Spring Framework</p>
+        <ul>
+          <li>Dependency Injection</li>
+          <li>Bean Lifecycle</li>
+        </ul>
+      </div>
+    </div> -->
+    
+    <div class="flex_container">
+      <div class="item">Core Java</div>
+      <div class="item">Java Collections</div>
+      <div class="item">Lambda</div>
+      <div class="item">Spring Framework</div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright &copy 2024 Edusight AB. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

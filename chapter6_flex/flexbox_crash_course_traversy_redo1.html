@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Flexbox Crash Course Traversy Redo</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        font-family: "Poppins", "Courier New", Courier, monospace;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        background: #a1c3ff;
+      }
+      .navbar {
+        height: 5%;
+        background: #3474e6;
+        color: #fff;
+      }
+      .navbar .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar .container .logo {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+        font-weight: bold;
+      }
+      ul {
+        display: flex;
+      }
+      ul li {
+        list-style-type: none;
+        margin-left: 1rem;
+      }
+      .navbar a:hover {
+        color: lightblue;
+      }
+      ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .header {
+        height: 50%;
+        background: #0151cc;
+        color: #fff;
+      }
+      .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header .container h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+      .header .container p {
+        padding-right: 8em;
+      }
+      .boxes {
+        height: 40%;
+        /* display: flex; */
+      }
+      .footer {
+        height: 5%;
+        background-color: #1b16b3;
+        color: #fff;
+      }
+      img {
+        max-width: 45%;
+      }
+      .container {
+        width: 80%;
+        max-width: 1536px;
+        height: 100%;
+        margin: 0 auto;
+      }
+      .boxes .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .box {
+        flex: 1;
+        background-color: #0151cc;
+        border-radius: 2em;
+        margin: 20px 10px;
+        padding: 15px 20px;
+        color: #fff;
+        /* height: 60%; */
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+      }
+      .box i {
+        margin-right: 10px;
+      }
+      h1,
+      h2 {
+        margin-bottom: 15px;
+      }
+      .footer .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* Responsiveness for the header section */
+      @media (max-width: 768px) {
+        .header .container {
+          flex-direction: column;
+          padding-top: 20px;
+          text-align: center;
+        }
+        /* Another way to achieve Responsiveness. This time for the boxes */
+        .boxes .container {
+          display: block;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Flexbox</div>
+        <ul class="nav">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="container">
+        <div>
+          <h1>Flexbox Crash Course</h1>
+          <p>
+            This crash course was created by Brad Traversy to help you learn the
+            basics of flexbox. <br />
+            Flexbox is a very important and useful tool in CSS.
+          </p>
+        </div>
+        <img src="img/flexbox.jpg" alt="Flexbox image" />
+        <!-- <img src="img/tic-tac-toe-neon.jpg" alt="Tic tac toe image" /> -->
+      </div>
+    </header>
+    <section class="boxes">
+      <div class="container">
+        <div class="box">
+          <h2><i class="fas fa-arrows-alt-v"></i> Alignment & Space</h2>
+          <p>
+            A more efficient way to lay out, align and distribute space among
+            items in a container
+          </p>
+        </div>
+        <div class="box">
+          <h2><i class="fas fa-arrows-alt"></i>Tricky Positioning</h2>
+          <p>
+            Flexbox usually solves tricky problems including how to position or
+            dynamically resize elements on a page
+          </p>
+        </div>
+        <div class="box">
+          <h2><i class="fas fa-mobile"></i>Responsive Design</h2>
+          <p>
+            Flexbox makes building a website layout (and making it responsive!)
+            much, much easier
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright &copy 2024 Edusight AB. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
