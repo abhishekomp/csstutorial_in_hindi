@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <title>Responsive Cards V3</title>
+    <title>Responsive Boxes V3</title>
     <style>
       * {
         box-sizing: border-box;
@@ -25,61 +25,100 @@
       html,
       body {
         font-family: "Poppins", "Courier New", Courier, monospace;
+        font-size: 16px;
         color: #333;
         background: #1ab25c;
-        height: 100%;
+        /* box-sizing: border-box;
+        height: 100vh; */
       }
       .main{
-        height: 96%;
-        display: flex;
-        background-color: burlywood;
+        height: 96vh;
       }
-      .footer{
-        height: 4%;
-      }
-      .container{
-        width: 80%;
-        max-width: 1536px;
+
+      .flex_container {
+        position: relative;
+        top: 20%;
         margin: 0 auto;
-      }
-      .main .container{
-        /* border: 0.1px solid black; */
-        height: 50%;
-        margin: 7em auto;
-        background-color:aqua;
+        background-color: #0d6eab;
+        /* width: 600px; */
+        width: 84vw;
+        /* flex-basis: 84vw; */
+        /* height: 200px; */
+        height: 50vh;
+        /* max-height: 400px; */
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        /* margin: 8em auto; */
+        border-radius: 1em;
       }
-      .main .container .item{
+      .item {
+        background-color: skyblue;
+        /* width: 25%; */
+        /* width: 150px; */
+        /* max-width: 120px; */
+        /* min-width: 150px; */
+        /* max-width: 10%; */
+        margin: 1.2em 1.2em;
         flex-basis: 25%;
         flex-grow: 1;
-        flex-shrink: 1;
-        height: 200px;
-        background-color: slateblue;
-        border: 0.2px solid red;
-        margin: 0 2em;
-        padding: 1.2em 1.2em;
-        border-radius: 20%;;
+        border: 0.8px solid #000;
+        /* font-size: 1.5rem; */
+        /* flex-grow: 1; */
       }
+      .flex_container .item .topic {
+        font-size: x-large;
+        padding-left: 0.4em;
+        font-weight: bold;
+      }
+      .flex_container .item ul {
+        margin-top: 1em;
+      }
+      .flex_container .item ul li {
+        /* list-style-type: circle; */
+        list-style-position: inside;
+        margin-left: 1em;
+        margin-bottom: 1em;
+      }
+      .footer {
+        height: 4vh;;
+        background-color: #1b16b3;
+        color: #fff;
+      }
+      .footer .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width: 880px) {
+        .flex_container {
+          top: 6%;
+          flex-direction: column;
+          border-radius: 0.5em;
+          height: 85vh;
+        }
+        .flex_container .item {
+          margin: 0.4em 0.5em;
+        }
+      }
+      /* .item:nth-of-type(1){
+
+      } */
     </style>
   </head>
   <body>
     <main class="main">
-      <div class="container">
+      <div class="flex_container">
         <div class="item">Core Java</div>
         <div class="item">Java Collections</div>
         <div class="item">Lambda</div>
         <div class="item">Spring Framework</div>
       </div>
     </main>
-
     <footer class="footer">
       <div class="container">
         <p>Copyright &copy 2024 Edusight AB. All rights reserved</p>
       </div>
     </footer>
-      <!-- <div class="flex_container">
+    <!-- <div class="flex_container">
       <div class="item">
         <p class="topic">Core Java</p>
         <ul>
@@ -109,7 +148,5 @@
         </ul>
       </div>
     </div> -->
-
-      
   </body>
 </html>
