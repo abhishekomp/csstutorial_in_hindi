@@ -1,0 +1,27 @@
+/* :root {
+  --navbar-height: 5vh;
+} */
+@media screen and (max-width:600px) {
+  html, body{
+    /* background-color: red; */
+    font-size: 12px;
+  }
+  .navbar .container {
+    flex-direction: column;
+  }
+  .searchbar > input {
+    width: 44vw;
+    max-width: 48vw;
+    margin: 1vh 0;
+  }
+  .nav {
+    /* width: 40vw; */
+    max-width: 45vw;
+    align-items: flex-start;
+    margin: 0.4em 0;
+  }
+  .nav li {
+    /* this introduces gap between the li items */
+    margin: auto;
+  }
+}
