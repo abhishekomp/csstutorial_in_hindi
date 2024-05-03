@@ -9,9 +9,11 @@
         *{
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         header{
-        height: 122px;
+        /* height: 122px; */
+        min-height: 5vh;
         background-color: black;
        }
 
@@ -34,28 +36,45 @@
         }
 
        main{
-        height: 899px;
+        /* height: 899px; */
+        height: 90vh;
         background-color: blue;
        }
-       .img1 {
-        /* display:block; */
-        /* margin:auto; */
-        transform: translate(24vw); /*98*/
-        animation: slider1 1s 2s forwards;
-       }
-       .img2 {
-        transform: translate(-98vw);/*-25*/
-        animation: slider2 1s 2s forwards;
-       }
+       
        .slider{
-        background-color: aqua;
-        height: 523px;
+        background-color: white;
+        width: 80vw;
+        max-width: 1536px;
+        /* height: 523px; */
+        /* min-height: 60%; */
         /* width: 100vw; */
-        /* overflow: hidden; */
-        /* margin: auto; */
+        overflow: hidden;
+        margin: auto;
         display: flex;
         justify-content: center;
        }
+       .img1 {
+        display:block;
+        margin:auto;
+        height: 100%;
+        max-width: 100%;
+        /* transform: translate(24vw); */
+        /* animation: slider1 1s 2s forwards; */
+       }
+       /* .img2 {
+        transform: translate(-98vw);
+        animation: slider2 1s 2s forwards;
+       } */
+       .footer {
+        height: 5vh;
+        background-color: #1b16b3;
+        color: #fff;
+      }
+      .footer .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     </style>
 </head>
 <body>
@@ -63,8 +82,13 @@
     <main>
         <div class="slider">
             <img class="img1" src="https://source.unsplash.com/collection/190727/1600x900" alt="NatureImage">
-            <img class="img2" src="https://source.unsplash.com/collection/190727/1600x901" alt="NatureImage">
+            <!-- <img class="img2" src="https://source.unsplash.com/collection/190727/1600x901" alt="NatureImage"> -->
         </div>
     </main>
+    <footer class="footer">
+        <div class="container">
+          <p>Copyright &copy 2024 Edusight AB. All rights reserved</p>
+        </div>
+      </footer>
 </body>
 </html>

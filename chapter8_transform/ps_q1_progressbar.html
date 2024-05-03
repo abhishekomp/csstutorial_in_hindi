@@ -8,19 +8,23 @@
     <style>
         .progress{
             background-color: red;
-            height: 3px;
-            animation: loadprogressbar 2s ease-in-out; 
+            /* height: 3px; */
+            min-height: 0.3vh; 
+            /* animation: loadprogressbar 2s ease-in-out;  */
+            animation: loadprogressbar 2s ease-in-out 1;
         }
         *{
             margin: 0;
             padding: 0;
         }
        header{
-        height: 122px;
+        /* height: 122px; */
+        min-height: 5.7vh;
         background-color: black;
        }
        main{
-        height: 899px;
+        /* height: 899px; */
+        min-height: 94vh;
         background-color: aqua;
        } 
        @keyframes loadprogressbar {

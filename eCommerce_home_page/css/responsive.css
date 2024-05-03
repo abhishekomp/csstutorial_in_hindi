@@ -3,12 +3,17 @@
 } */
 @media screen and (max-width:600px) {
   html, body{
-    /* background-color: red; */
+    background-color: red;
     font-size: 12px;
   }
   .navbar .container {
     flex-direction: column;
   }
+  /* .logo{
+    width: 21vw;
+    max-width: 28vw;
+    gap: 4em;
+  } */
   .searchbar > input {
     width: 44vw;
     max-width: 48vw;

@@ -84,6 +84,7 @@ ul li a {
   justify-content: space-between;
   margin-top: 0.5em;
   border: 0.5px solid whitesmoke;
+  /* overflow: scroll; */
 }
 /* .card-item{
   display: block;
