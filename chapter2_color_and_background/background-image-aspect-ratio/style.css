@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.img-container{
+  /* margin: 40px; */
+  width: 50%;
+  max-width: 800px;
+  height: 100vh;
+  background-color: blueviolet;
+
+  /* background-image: url('img/Ocean_Water_1920x1080.jpg'); */
+  /* background-image: url('img/water_pond_ripples_1194501_1280x960.jpg'); */
+  background-image: url('img/lake_mountains_forest_1225249_1280x960.jpg');
+  background-size: cover;
+}
