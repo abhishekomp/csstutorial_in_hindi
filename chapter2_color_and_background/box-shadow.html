@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadow</title>
+  <style>
+    body{
+      display: grid;
+      place-items: center;
+      background-color: hsl(38, 60%, 61%);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .box{
+      padding: 2em;
+      margin: 300px auto;
+      background: white;
+      color: hsl(200, 100%, 51%);
+      /* horizontal and vertical offset (% does not work, can be negative) */
+      /* box-shadow: 20px 20px; */
+
+      /* the third value is blur value (cannot be negative) */
+      /* box-shadow: 20px 20px 20px; */
+      /* the fourth value is the spread */
+      /* box-shadow: 20px 20px 20px 20px; */
+
+      box-shadow: 0px 0px 20px 10px red;
+
+      /* box-shadow: 2em 2em currentColor; */
+
+      box-shadow: inset 0px 0px 20px 10px red;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>The <code>box-shadow</code> property</h1>
+  </div>
+</body>
+</html>
