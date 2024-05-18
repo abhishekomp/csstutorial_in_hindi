@@ -5,22 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HSL</title>
   <style>
+    div{
+      text-align: center;
+      font-size: 2rem;
+    }
+
     .box{
       /* width: 400px; */
-      height: 400px;
+      height: 200px;
       /* background-color: red; */
       /* hue saturation lightness */
-      /* hue -> 0 till 360 */
+      /* hue -> 0 till 360, hue=0 and hue=360 is red */
       /* saturation = 100% = full red version of red if hue = 0 */
-      /* saturation = 0% is always gray no matter what is hue */
-      /* lightness = 0% = black */
+      /* saturation = 0% is always gray no matter what the hue value is */
+      /* lightness = 0% = black, no matter what hue and saturation values are */
       /* lightness = 100% = white */
       /* lightness = 50% = the full color of whatever hue is */
       background-color: hsl(200, 100%, 50%);
     }
+
+    .box:hover{
+      /* when I hover my mouse on the div, it should get a little darker. this is done by just lowering down the lightness value. */
+      background-color: hsl(200, 100%, 30%);
+    }
+
+    .secondbox{
+      --hue: 100;
+      --saturation: 100%;
+      --lightness: 50%;
+      height: 200px;
+      margin-top: 1em;
+      background-color: hsl(var(--hue), var(--saturation), var(--lightness));
+    }
+    .secondbox:hover{
+      --lightness: 30%;
+    }
   </style>
 </head>
 <body>
-  <div class="box"></div>
+  <div class="box">First box</div>
+  <div class="secondbox">Second box</div>
 </body>
 </html>
