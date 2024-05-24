@@ -1,0 +1,78 @@
+/*base css*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: hsla(38, 26%, 83%, 0.849);
+}
+/*base css*/
+.container{
+  margin: 100px auto;
+  max-width: 820px;
+  padding: 10px;
+  background-color: hsl(272, 77%, 63%);
+  
+
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: repeat(auto-fill, 1fr); */
+  /* this is used to achieve responsiveness (achieve wrap) */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.item{
+  background: steelblue;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  border: 1px solid skyblue;
+}
+
+@media (max-width: 600px){
+  .container{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+Default styles
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: #f5f5f5;
+}
+.container{
+  margin: 100px auto;
+  max-width: 960px;
+  padding: 10px;
+} */
