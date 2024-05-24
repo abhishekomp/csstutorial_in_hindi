@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: lightblue;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  line-height: 1.7;
+  font-size: 18px;
+  color: blue;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+h1{
+  text-align: center;
+}
+
+.main-grid{
+  min-height: 70vh;
+  width: min(100vw - 2rem, 75rem);
+  margin-inline: auto;
+  border: 5px solid rebeccapurple;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  /* this will place the grid in the center */
+  place-content: center; 
+  /* justify-content: center; */
+  /* align-content: center; */
+
+  /* item will be centered within its cell */
+  /* place-items = <'align-items'> <'justify-items'>  */
+  /* place-items: start center; */
+  /* place-items: center; */
+  /* justify-items: center; */
+  /* align-items: center; */
+
+}
+
+.card{
+  background: pink;
+  padding: 0.2em;
+}
