@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins&family=Bungee+Shade&family=Heebo:wght@100..900&display=swap');
+
+:root {
+  --ff-primary: Heebo, sans-serif;
+  --ff-secondary: Bungee, cursive;
+  --ff-tertiary: Poppins, sans-serif;
+  --ff-accent: Bungee Shade, cursive;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ff-secondary);
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.container{
+  width: 90vw;
+  max-width: 1536px;
+  /* padding: 1rem; */
+  background-color: burlywood;
+}
+
+body{
+  display: grid;
+  place-items: center;
+}
+
+.item{
+  background-color: hsl(0, 0%, 60%);
+  padding: .5em 1em;
+  /* outline: 2px solid hotpink; */
+}
+
+.item > h2{
+  margin-bottom: .5em;
+}
+
+.grid-container{
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1em;
+}
+
+.item:nth-of-type(odd){
+  background-color: hsl(0, 0%, 50%);
+}
