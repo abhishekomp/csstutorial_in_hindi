@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  background: limegreen;
+  padding: 1em;
+  font-size: 2rem;
+  width: 100%;
+  /* width: auto; */
+  margin-left: 50px;
+}
