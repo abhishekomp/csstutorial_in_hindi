@@ -7,7 +7,7 @@
 }
 
 body {
-  background: lightblue;
+  background: rgb(130, 112, 230);
   font-family: 'Barlow Semi Condensed', sans-serif;
   line-height: 1.7;
   font-size: 18px;
@@ -27,8 +27,8 @@ h1{
   border: 5px solid rebeccapurple;
   
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* gap: 1rem; */
 
   /* this will place the grid in the center */
   place-content: center; 
@@ -38,6 +38,7 @@ h1{
   /* item will be centered within its cell */
   /* place-items = <'align-items'> <'justify-items'>  */
   /* place-items: start center; */
+
   /* place-items: center; */
   /* justify-items: center; */
   /* align-items: center; */

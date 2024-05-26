@@ -46,6 +46,7 @@ picture {
 body{
   display: grid;
   place-items: center;
+  /* place-content: center; */
 }
 
 .item{
@@ -63,6 +64,8 @@ body{
   /* grid-template-columns: 1fr 1fr 1fr; */
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1em;
+  /* place-items: center; */
+  /* place-content: center; */
 }
 
 .item:nth-of-type(odd){

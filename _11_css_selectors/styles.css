@@ -1,0 +1,57 @@
+*{
+  background: lightseagreen;
+}
+body {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+input{
+  font-size: 2rem;
+  background: lightblue;
+  padding: .2em;
+  transition: all 0.3s linear;
+}
+
+/* .red{
+  background-color: red;
+} */
+
+/* Select only those divs which have the class = red and also class = green-text */
+/* div.red.green-text{
+  background: red;
+  color: green;
+} */
+
+/* Any div which has a child class = red */
+/* div .red{
+  background: red;
+} */
+
+/* Direct child selector using > */
+
+/* Sibling selector */
+/* Every li that comes after the li with a class of red */
+/* li.red ~ li {
+  background: blueviolet;
+} */
+
+/* Direct next sibling */
+/* li.red + li{
+  background: brown;
+} */
+
+li:hover{
+  background: red;
+}
+
+input:focus{
+  background: purple;
+  color: wheat
+}
+
+input:required{
+  /* border: 2px dotted dodgerblue; */
+  background: lightpink;
+}
+

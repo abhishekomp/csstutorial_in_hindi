@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 400px;
+  height: 400px;
+  background-color: teal;
+  margin: 40px auto;
+}
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  animation: jumpingball 2s ease 2 alternate;
+}
+
+/* to do */
+@keyframes jumpingball {
+  0%{
+    transform: translate(50%, 50%);
+  }
+  50%{
+    transform: translate(150px, 300px);
+  }
+}

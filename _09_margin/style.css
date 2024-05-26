@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: aliceblue;
+  font-size: 2rem;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.primary-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orangered;
+  padding: 1em;
+  
+}
+.site-nav-items{
+  display: flex;
+  gap: 1em;
+  flex-grow: 1;
+}
+
+.primary-header > * {
+  outline: 2px solid limegreen;
+}
