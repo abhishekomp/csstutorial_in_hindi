@@ -18,6 +18,7 @@ body {
   margin: 100px auto;
   padding: 20px;
   
+  /*this is done later after styling the card */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
@@ -37,10 +38,12 @@ body {
   margin-bottom: 10px;
 }
 
+/* this is the name */
 .card__header h3 {
   font-size: 15px;
 }
 
+/* this is the text verified graduate */
 .card__header p {
   opacity: 50%;
 }
