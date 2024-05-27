@@ -30,8 +30,11 @@ body{
   /* row-gap: 10px; */
   gap: 10px;
   
-  /* justify-content: center; */
+  /* justify-content makes sense when the actual grid inside the container is smaller than the container */
+  /* justify-content places the actual grid (grid content) horizontally at start, end, center. space-between etc*/
+  justify-content: end;
   align-content: center;
+  /* place-content: center; */
 
   /* justify-content: end; */
 
