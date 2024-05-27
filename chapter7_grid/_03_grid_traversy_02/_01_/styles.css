@@ -15,7 +15,8 @@ body{
 /*base css*/
 .container{
   margin: 100px auto;
-  max-width: 820px;
+  width: 80vw;
+  max-width: 960px;
   padding: 10px;
   background-color: hsl(272, 77%, 63%);
 
@@ -26,6 +27,7 @@ body{
   /* grid-gap: 10px; */
   /* column-gap: 10px; */
   /* row-gap: 10px; */
+  /* gap: .5em; */
   gap: 10px;
 
   /* justify-content: end; */
@@ -37,7 +39,8 @@ body{
 
   /* fixes the height of every cell in the grid */
   /* grid-template-rows: repeat(3, 1fr); */
-  /* grid-template-rows: minmax(100px, auto); */
+  /* below is specifying the height of single row. */
+  /* grid-template-rows: minmax(100px, auto);   */
 }
 
 .item{
@@ -47,7 +50,6 @@ body{
   padding: 20px;
   border: 1px solid skyblue;
 }
-
 .item:nth-of-type(2){
   height: 100px;
   width: 100px;

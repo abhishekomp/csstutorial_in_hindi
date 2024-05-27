@@ -15,7 +15,8 @@ body{
 /*base css*/
 .container{
   margin: 100px auto;
-  max-width: 820px;
+  width: 80vw;
+  max-width: 1120px;
   padding: 10px;
   background-color: hsl(272, 77%, 63%);
   
@@ -24,7 +25,8 @@ body{
   /* grid-template-columns: repeat(3, 1fr); */
   /* grid-template-columns: repeat(auto-fill, 1fr); */
   /* this is used to achieve responsiveness (achieve wrap) */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
 }
 
