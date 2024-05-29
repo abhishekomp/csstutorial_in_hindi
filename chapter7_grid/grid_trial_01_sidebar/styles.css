@@ -58,7 +58,7 @@ body {
 
 
 .title{
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -66,7 +66,8 @@ body {
 }
 
 .title img{
-  width: 150px;
+  width: 120px;
+  max-width: 150px;
   display: block;
   border-radius: 90%;  
 }
@@ -86,4 +87,24 @@ body {
 .footer{
   font-size: larger;
   text-align: center;
+}
+
+@media (max-width: 768px){
+  body{
+    grid-template-columns: 1fr;
+    font-size: large;
+    /* grid-auto-rows: 1fr 3fr; */
+  }
+  .sidebar {
+    /* display: block; */
+    grid-template-rows: auto;
+    /* place-content: center; */
+  }
+  .title{
+    justify-content: center;
+    font-size: 2.2rem;
+  }
+  .detail > h1 {
+    font-size: 2.2rem;
+  }
 }
