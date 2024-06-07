@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Absolute</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    h2{
+      position: absolute;
+      background-color: #eee;
+    }
+    h3{
+      position: absolute;
+      background: red;
+    }
+    h4{
+      /* The last one in the document flow will be visible at the top */
+      /* h4 at the top then h3 then h2 and finally at the bottom will be the paragraph */
+      position: absolute;
+      background: teal;
+    }
+  </style>
+</head>
+<body>
+  <h1>One</h1>
+  <h2>Twooo</h2>
+  <h3>Three</h3>
+  <h4>Fourrrr</h4>
+  <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
